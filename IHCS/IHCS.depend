@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1525425695 source:c:\dev\gl\las_lna\ihcs\main.cpp
+	<iostream>
+
+1525425695 source:c:\dev\gl\las_lna\ihcs\src\championnat.cpp
+	"Championnat.h"
+
+1525425695 c:\dev\gl\las_lna\ihcs\include\championnat.h
+
