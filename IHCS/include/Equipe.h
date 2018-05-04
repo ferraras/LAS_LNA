@@ -14,7 +14,7 @@ class Equipe
         virtual ~Equipe();
 
         //Méthodes
-        void engager(Joueur joueur);
+        void engager(Joueur);
         void afficher();
 
         //Attributs
