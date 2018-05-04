@@ -7,3 +7,26 @@
 
 1525425695 c:\dev\gl\las_lna\ihcs\include\championnat.h
 
+1525425695 source:c:\dev\gl\las_lna\ihcs\src\equipe.cpp
+	"Equipe.h"
+
+1525427719 c:\dev\gl\las_lna\ihcs\include\equipe.h
+	<Joueur.h>
+	<string>
+	<list>
+
+1525425695 c:\dev\gl\las_lna\ihcs\include\joueur.h
+	<string>
+
+1525425695 source:c:\dev\gl\las_lna\ihcs\src\joueur.cpp
+	"Joueur.h"
+	<iostream>
+	<string>
+
+1525425695 source:c:\dev\gl\las_lna\ihcs\src\match.cpp
+	"Match.h"
+
+1525427719 c:\dev\gl\las_lna\ihcs\include\match.h
+	<Equipe.h>
+	<string>
+

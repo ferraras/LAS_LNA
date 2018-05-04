@@ -14,8 +14,8 @@ class Equipe
         virtual ~Equipe();
 
         //Méthodes
-        void Engager(Joueur joueur);
-        void Afficher();
+        void engager(Joueur joueur);
+        void afficher();
 
         //Attributs
         std::string nom;
