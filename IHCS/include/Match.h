@@ -11,6 +11,7 @@ class Match
     public:
         //Constructeurs
         Match();
+        Match(string,Equipe,Equipe);
         virtual ~Match();
 
         //Attributs
