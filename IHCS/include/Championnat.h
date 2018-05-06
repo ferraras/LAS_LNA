@@ -3,6 +3,7 @@
 
 #include <list>
 #include <string>
+#include "Match.h"
 using namespace std;
 
 class Championnat
