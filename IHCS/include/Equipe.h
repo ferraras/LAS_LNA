@@ -11,6 +11,7 @@ class Equipe
     public:
         //Constructeurs
         Equipe();
+        Equipe(string,list<int>,short,int);
         virtual ~Equipe();
 
         //Méthodes
