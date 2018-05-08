@@ -19,6 +19,10 @@ class Match
         Equipe hote;
         Equipe invite;
 
+        //methodes
+        void generateurScore();
+        void afficherScore();
+
 
     protected:
 
@@ -26,7 +30,7 @@ class Match
         //Attributs
         int scoreHote;
         int scoreInvite;
-        bool termine;
+        bool termine= false;
 };
 
 #endif // MATCH_H
