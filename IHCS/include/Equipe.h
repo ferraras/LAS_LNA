@@ -18,6 +18,7 @@ class Equipe
         void engager(Joueur,Joueur,Joueur,Joueur,Joueur);
         void addPalmares(string);
         void afficher();
+        int getNiveauEquipe();
 
         //Attributs
         string nom;

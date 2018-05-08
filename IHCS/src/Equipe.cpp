@@ -25,7 +25,7 @@ void Equipe::engager(Joueur joueur1, Joueur joueur2, Joueur joueur3, Joueur joue
     tabJoueur[2] = joueur3;
     tabJoueur[3] = joueur4;
     tabJoueur[4] = joueur5;
-    niveauEquipe = (joueur1.getLevel()+joueur2.getLevel()+joueur3.getLevel()+joueur4.getLevel()+joueur5.getLevel())/5;
+    niveauEquipe = (int)(joueur1.getLevel()+joueur2.getLevel()+joueur3.getLevel()+joueur4.getLevel()+joueur5.getLevel())/5;
 }
 void Equipe::afficher()
 {
@@ -47,6 +47,12 @@ void Equipe::afficher()
  {
     palmares.push_front(nomChampionnat);
  }
+
+ int Equipe::getNiveauEquipe()
+ {
+     return niveauEquipe;
+ }
+
 Equipe::~Equipe()
 {
     //dtor
