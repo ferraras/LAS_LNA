@@ -11,6 +11,8 @@ class Joueur
         Joueur(string nom,int nbButs,int level);
         Joueur(const Joueur &source);
         void afficher();
+        int getLevel();
+        string getNom();
         virtual ~Joueur();
 
     protected:

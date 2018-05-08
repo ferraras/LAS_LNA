@@ -32,6 +32,14 @@ void Joueur::afficher()
     cout << "niveau : " << level << endl;
 }
 
+int Joueur::getLevel()
+{
+    return level;
+}
+string Joueur::getNom()
+{
+    return nom;
+}
 Joueur::~Joueur()
 {
     //dtor

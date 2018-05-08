@@ -11,23 +11,27 @@ class Equipe
     public:
         //Constructeurs
         Equipe();
-        Equipe(string,list<int>,short,int);
+        Equipe(string,short);
         virtual ~Equipe();
 
         //Méthodes
-        void engager(Joueur);
+        void engager(Joueur,Joueur,Joueur,Joueur,Joueur);
+        void addPalmares(string);
         void afficher();
 
         //Attributs
-        std::string nom;
-        std::list<int> palmares;
+        string nom;
+        list<string> palmares;
         short ID;
+
 
     protected:
 
     private:
         //Attributs
-        int niveauEquipe;
+        int niveauEquipe=0;
+        Joueur tabJoueur[];
+
 };
 
 #endif // EQUIPE_H
