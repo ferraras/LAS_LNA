@@ -15,7 +15,7 @@ class Equipe
         virtual ~Equipe();
 
         //Méthodes
-        void engager(Joueur,Joueur,Joueur,Joueur,Joueur);
+        void engager(Joueur);
         void addPalmares(string);
         void afficher();
         int getNiveauEquipe();
@@ -31,7 +31,7 @@ class Equipe
     private:
         //Attributs
         int niveauEquipe=0;
-        Joueur tabJoueur[];
+        list<Joueur> listJoueur;
 
 };
 

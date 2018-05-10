@@ -20,7 +20,11 @@ int main()
     Joueur joueur10("jj5",5,9);
 
     Equipe equipe1("equipe1",0);
-    equipe1.engager(joueur1,joueur2,joueur3,joueur4,joueur5);
+    equipe1.engager(joueur1);
+    equipe1.engager(joueur2);
+    equipe1.engager(joueur3);
+    equipe1.engager(joueur4);
+    equipe1.engager(joueur5);
     equipe1.addPalmares("tournoisbrav");
     equipe1.addPalmares("tournouaaaaaa");
     equipe1.addPalmares("blabla");
@@ -28,13 +32,17 @@ int main()
 
     cout<<endl;
 
- /*   Equipe equipe2("equipe2",1);
-    equipe2.engager(joueur6,joueur7,joueur8,joueur9,joueur10);
+    Equipe equipe2("equipe2",1);
+    equipe2.engager(joueur6);
+    equipe2.engager(joueur7);
+    equipe2.engager(joueur8);
+    equipe2.engager(joueur9);
+    equipe2.engager(joueur10);
     equipe2.addPalmares("ligue des champions");
     equipe2.afficher();
 
     cout<<endl;
-*/
+
 
     Match match1("a vs b",equipe1,equipe1);
     match1.generateurScore();

@@ -2,6 +2,7 @@
 #include <string>
 #include <list>
 #include <iostream>
+
 using namespace std;
 
 Equipe::Equipe()
@@ -18,34 +19,30 @@ Equipe::Equipe(string nom,short ID)
     this->niveauEquipe = niveauEquipe;
 }
 
-void Equipe::engager(Joueur joueur1, Joueur joueur2, Joueur joueur3, Joueur joueur4, Joueur joueur5)
+void Equipe::engager(Joueur joueur)
 {
-    tabJoueur[0] = joueur1;
-    tabJoueur[1] = joueur2;
-    tabJoueur[2] = joueur3;
-    tabJoueur[3] = joueur4;
-    tabJoueur[4] = joueur5;
-    niveauEquipe = (int)(joueur1.getLevel()+joueur2.getLevel()+joueur3.getLevel()+joueur4.getLevel()+joueur5.getLevel())/5;
+    this->listJoueur.push_back(joueur);
+    this->niveauEquipe+=joueur.getLevel();
 }
 void Equipe::afficher()
 {
     cout << "nom : " << nom << endl;
     cout << "ID : " << ID << endl;
-    cout << "niveau de l'equipe : " << niveauEquipe << endl;
+    cout << "niveau de l'equipe : " << this->niveauEquipe << endl;
 
-    for (int i=0; i<5; i++)
+    for (list<Joueur>::iterator it=listJoueur.begin(); it != listJoueur.end(); ++it)
     {
-        cout << tabJoueur[i].getNom() << "  ";
+        cout << it->getNom() << "  ";
     }
     cout << endl;
 
-    for (std::list<string>::iterator it=palmares.begin(); it != palmares.end(); ++it)
-    std::cout << ' ' << *it;
+    for (list<string>::iterator it=palmares.begin(); it != palmares.end(); ++it)
+    cout << ' ' << *it;
 }
 
  void Equipe::addPalmares(string nomChampionnat)
  {
-    palmares.push_front(nomChampionnat);
+    this->palmares.push_front(nomChampionnat);
  }
 
  int Equipe::getNiveauEquipe()
