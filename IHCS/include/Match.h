@@ -22,7 +22,7 @@ class Match
         //methodes
         void generateurScore();
         void afficherScore();
-
+        void setScore(int,int);
 
     protected:
 

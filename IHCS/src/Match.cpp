@@ -37,3 +37,9 @@ void Match::afficherScore()
     cout << "score " << this->hote.nom << " : " << this->scoreHote << endl;
     cout << "score " << this->invite.nom << " : " << this->scoreInvite << endl;
 }
+
+void Match::setScore(int score1, int score2)
+{
+    this->scoreHote = score1;
+    this->scoreInvite = score2;
+}
