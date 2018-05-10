@@ -4,6 +4,7 @@
 #include <list>
 #include <string>
 #include "Match.h"
+#include "Equipe.h"
 using namespace std;
 
 class Championnat
@@ -11,11 +12,12 @@ class Championnat
     public:
         //Constructeurs
         Championnat();
+        Championnat(string);
         virtual ~Championnat();
 
         //Méthodes
-        void ajouterEquipe();
-        void agenderMatch();
+        void ajouterEquipe(Equipe);
+        void agenderMatch(Match);
         void jouerMatch(short,short);
         void reinitialiser();
         void afficherEquipes();

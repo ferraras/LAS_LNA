@@ -44,3 +44,49 @@
 	<Equipe.h>
 	<string>
 
+1525949365 source:c:\users\lucie.lemarcha\documents\etude\genie_log\projetgit\las_lna\ihcs\main.cpp
+	<iostream>
+	"Joueur.h"
+	"Equipe.h"
+	"Match.h"
+
+1525949365 c:\users\lucie.lemarcha\documents\etude\genie_log\projetgit\las_lna\ihcs\include\joueur.h
+	<string>
+
+1525949365 c:\users\lucie.lemarcha\documents\etude\genie_log\projetgit\las_lna\ihcs\include\equipe.h
+	<Joueur.h>
+	<string>
+	<list>
+
+1525949365 c:\users\lucie.lemarcha\documents\etude\genie_log\projetgit\las_lna\ihcs\include\match.h
+	<Equipe.h>
+	<string>
+
+1525949669 source:c:\users\lucie.lemarcha\documents\etude\genie_log\projetgit\las_lna\ihcs\src\championnat.cpp
+	"Championnat.h"
+	"Match.h"
+
+1525949779 c:\users\lucie.lemarcha\documents\etude\genie_log\projetgit\las_lna\ihcs\include\championnat.h
+	<list>
+	<string>
+	"Match.h"
+	"Equipe.h"
+
+1525949365 source:c:\users\lucie.lemarcha\documents\etude\genie_log\projetgit\las_lna\ihcs\src\equipe.cpp
+	"Equipe.h"
+	<string>
+	<list>
+	<iostream>
+
+1525949365 source:c:\users\lucie.lemarcha\documents\etude\genie_log\projetgit\las_lna\ihcs\src\joueur.cpp
+	"Joueur.h"
+	<iostream>
+	<string>
+
+1525949365 source:c:\users\lucie.lemarcha\documents\etude\genie_log\projetgit\las_lna\ihcs\src\match.cpp
+	"Match.h"
+	"Equipe.h"
+	<iostream>
+	<time.h>
+	<random>
+
