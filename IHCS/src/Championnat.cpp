@@ -29,13 +29,21 @@ void Championnat::jouerMatch(short,short)
 void Championnat::reinitialiser()
 {
     //mettre a 0 les scores de chaque equipe
+     for (list<Match>::iterator it=matches.begin(); it != matches.end(); ++it)
+    {
+        it->setScore(0,0);
+    }
     //vider liste equipe
-    /*for (list<Equipe>::iterator it=palmares.end(); it != palmares.begin(); it--)
+    for (list<Equipe>::iterator it=equipes.end(); it != equipes.begin(); --it)
     {
        this->equipes.erase(it);
-    }*/
+    }
 
     //vider liste match
+    for (list<Match>::iterator it=matches.end(); it != matches.begin(); --it)
+    {
+       this->matches.erase(it);
+    }
 }
 void Championnat::afficherEquipes()
 {
