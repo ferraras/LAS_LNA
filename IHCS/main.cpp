@@ -44,7 +44,7 @@ int main()
     cout<<endl;
 
 
-    Match match1("a vs b",equipe1,equipe1);
+    Match match1("a vs b",equipe1,equipe2);
     match1.generateurScore();
     match1.afficherScore();
 

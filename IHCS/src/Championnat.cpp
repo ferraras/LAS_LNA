@@ -1,5 +1,6 @@
 #include "Championnat.h"
 #include "Match.h"
+#include <iostream>
 
 using namespace std;
 
@@ -47,11 +48,22 @@ void Championnat::reinitialiser()
 }
 void Championnat::afficherEquipes()
 {
+    for (list<Equipe>::iterator it=equipes.begin(); it != equipes.end(); ++it)
+    {
+        it->afficher();
+    }
 
 }
 void Championnat::afficherMatchesJoues()
 {
+    for (list<Match>::iterator it=matches.begin(); it != matches.end(); ++it)
+    {
+        cout << "Lieu du match : " << it->lieu << endl;
+        cout << "Equipe hote : " << it->hote.nom << endl;
+        cout << "Equipe invitee : " << it->invite.nom << endl;
+        it->afficherScore();
 
+    }
 }
 
 
