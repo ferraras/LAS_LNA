@@ -34,10 +34,10 @@ void Equipe::afficher()
     {
         cout << it->getNom() << "  ";
     }
-    cout << endl;
-
+    cout << endl << "Palmares : ";
     for (list<string>::iterator it=palmares.begin(); it != palmares.end(); ++it)
     cout << ' ' << *it;
+    cout << endl << endl;
 }
 
  void Equipe::addPalmares(string nomChampionnat)

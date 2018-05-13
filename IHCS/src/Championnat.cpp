@@ -18,33 +18,35 @@ void Championnat::ajouterEquipe(Equipe equipe)
 {
     this->equipes.push_back(equipe);
 }
+
 void Championnat::agenderMatch(Match match)
 {
     this->matches.push_back(match);
 }
-void Championnat::jouerMatch(short,short)
+void Championnat::jouerMatch(short ID1,short ID2)
 {
- // parcourir liste equipe comparer id
- // faire match avec les 2 equipes
+     for (list<Match>::iterator it=matches.begin(); it != matches.end(); ++it)
+    {
+        if((it->hote.ID == ID1 && it->invite.ID == ID2)||(it->hote.ID == ID2 && it->invite.ID == ID1))
+        {
+            it->generateurScore();
+        }
+    }
+
 }
 void Championnat::reinitialiser()
 {
-    //mettre a 0 les scores de chaque equipe
-     for (list<Match>::iterator it=matches.begin(); it != matches.end(); ++it)
+    //reinitialiser les match
+    for (list<Match>::iterator it=matches.begin(); it != matches.end(); ++it)
     {
-        it->setScore(0,0);
+       it->reset();
     }
     //vider liste equipe
-    for (list<Equipe>::iterator it=equipes.end(); it != equipes.begin(); --it)
-    {
-       this->equipes.erase(it);
-    }
+    equipes.clear();
 
-    //vider liste match
-    for (list<Match>::iterator it=matches.end(); it != matches.begin(); --it)
-    {
-       this->matches.erase(it);
-    }
+    //vider les equipes
+    matches.clear();
+
 }
 void Championnat::afficherEquipes()
 {
@@ -58,11 +60,10 @@ void Championnat::afficherMatchesJoues()
 {
     for (list<Match>::iterator it=matches.begin(); it != matches.end(); ++it)
     {
-        cout << "Lieu du match : " << it->lieu << endl;
-        cout << "Equipe hote : " << it->hote.nom << endl;
-        cout << "Equipe invitee : " << it->invite.nom << endl;
-        it->afficherScore();
-
+        if(it->termine==true)
+       {
+            it->afficherScore();
+       }
     }
 }
 

@@ -15,6 +15,7 @@ class Match
         virtual ~Match();
 
         //Attributs
+        bool termine= false;
         string lieu;
         Equipe hote;
         Equipe invite;
@@ -22,7 +23,7 @@ class Match
         //methodes
         void generateurScore();
         void afficherScore();
-        void setScore(int,int);
+        void reset();
 
     protected:
 
@@ -30,7 +31,7 @@ class Match
         //Attributs
         int scoreHote;
         int scoreInvite;
-        bool termine= false;
+        string equipeGagnante;
 };
 
 #endif // MATCH_H

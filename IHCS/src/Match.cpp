@@ -26,20 +26,39 @@ Match::~Match()
 
 void Match::generateurScore()
 {
-    srand (time(NULL));
-    scoreHote += (hote.getNiveauEquipe()/5)*(rand()%3);
-    scoreInvite += (invite.getNiveauEquipe()/5)*(rand()%3);
-    termine=true;
+    if (termine == 0)
+    {
+        srand (time(NULL));
+        scoreHote = (hote.getNiveauEquipe()*(rand()% 100)/1000);
+        scoreInvite = (invite.getNiveauEquipe()*(rand()% 100)/1000);
+        if(scoreHote > scoreInvite)
+        {
+            equipeGagnante = hote.nom;
+        }
+        else if (scoreHote < scoreInvite)
+        {
+            equipeGagnante = invite.nom;
+        }
+        else
+        {
+            equipeGagnante = "egualite";
+        }
+        termine=true;
+    }
 }
 
 void Match::afficherScore()
 {
-    cout << "score " << this->hote.nom << " : " << this->scoreHote << endl;
-    cout << "score " << this->invite.nom << " : " << this->scoreInvite << endl;
+    cout << "Lieu du match : " << lieu << endl;
+    cout << "Equipe hote : " << hote.nom << endl;
+    cout << "Equipe invitee : " << invite.nom << endl;
+    cout << "match " << this->lieu << " equipe gagnante : " << this->equipeGagnante << " : " << this->scoreHote << " a " << this->scoreInvite  << endl;
 }
 
-void Match::setScore(int score1, int score2)
+void Match::reset()
 {
-    this->scoreHote = score1;
-    this->scoreInvite = score2;
+    this->scoreHote=0;
+    this->scoreInvite=0;
+    this->termine=false;
+    this->equipeGagnante="";
 }
