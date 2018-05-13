@@ -27,8 +27,8 @@ Match::~Match()
 void Match::generateurScore()
 {
     srand (time(NULL));
-    scoreHote = hote.getNiveauEquipe()*(rand()%3);
-    scoreInvite = invite.getNiveauEquipe()*(rand()%3);
+    scoreHote += (hote.getNiveauEquipe()/5)*(rand()%3);
+    scoreInvite += (invite.getNiveauEquipe()/5)*(rand()%3);
     termine=true;
 }
 
