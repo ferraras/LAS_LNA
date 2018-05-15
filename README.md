@@ -21,5 +21,5 @@ Gaille Anthony
 Ferrara Stelvio
 ## Versions
 ```
-1.0 : Première release
+1.0 : Première release (15.05.2018)
 ```
