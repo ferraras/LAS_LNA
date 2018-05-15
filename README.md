@@ -1,37 +1,25 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/ferraras/LAS_LNA/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+# Simulation d'un championnat de hockey
+Ce programme simule un championnat de hockey. Il permet la création de joueur, équipe et championnat.
+## Démarrer le programme
+### Pré-requis
+Il est nécessaire d'avoir un compilateur c++ afin de compiler le programme. Les compilateurs nécessaires sont compris dans l'installation de CodeBlocks, il est donc conseillé d'installer cet IDE.
+### Récupérer le programme
+Pour récupérer le programme :
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ferraras/LAS_LNA/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+1. Ouvrir Git bash et pointer dans le dossier où vous voulez placer le projet.
+2. Entrer la commande :
+    git clone https://github.com/ferraras/LAS_LNA.git
+```
+Le programme est maintenant récupéré dans votre dossier.
+### Compiler et lancer le programme
+Utiliser la compilation intégrée dans CodeBlocks et lancer le programme depuis l'IDE.
+## Développement
+Le programme a été développé avec l'IDE CodeBlocks
+### Contributeurs
+Lemarchand Lucie
+Gaille Anthony
+Ferrara Stelvio
+## Versions
+```
+1.0 : Première release
+```
